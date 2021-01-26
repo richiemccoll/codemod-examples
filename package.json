@@ -1,0 +1,15 @@
+{
+  "name": "codemod-examples",
+  "version": "1.0.0",
+  "description": "Examples of codemods using jscodeshift.",
+  "scripts": {
+    "examples:console": "./node_modules/jscodeshift/bin/jscodeshift.sh -t ./examples/remove-console-logs/transform.js ./examples/remove-console-logs/input.js -d -p",
+    "examples:replacemethods": "./node_modules/jscodeshift/bin/jscodeshift.sh -t ./examples/replace-method-calls/transform.js ./examples/replace-method-calls/input.js -d -p"
+  },
+  "keywords": ["jscodeshift", "codemod"],
+  "author": "richiemccoll <richie.mccoll@hotmail.co.uk>",
+  "license": "ISC",
+  "devDependencies": {
+    "jscodeshift": "^0.11.0"
+  }
+}
